@@ -1,0 +1,158 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize} \vspace{-3pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize} \vspace{-1pt}}
+\renewcommand{\baselinestretch}{1.0}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://nwilcoxnz.co.nz}{\Large Nicole Wilcox}} &  \href{mailto:nwilcoxnz@gmail.com}{nwilcoxnz@gmail.com}\\
+ {Software Engineer} & +64-21-205-0941 \\
+ &\href{www.nwilcox.co.nz}{nwilcox.co.nz}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massey University}{Auckland, NZ}
+      {Bachelor of Science (Computer Science)}{2012 -- 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ASB Bank}{Auckland, NZ}
+      {Software Engineer}{Oct 2017 - Present}
+      \par{Responsibilities include developing tools to improve security practices throughout the Bank.}
+      \resumeItemListStart
+        \resumeItem{Dashboards}
+          {Created web apps designed to increase the visibility of security practices and aid in the SecDevOps workflow for customer-facing products. The dashboards are made mainly in React.js with a C\#.NET api and MS SQL Server for databases. IIS is used for deployment.}
+        \resumeItem{Wiki}
+          {Created a Security Wiki which a website for internal use that is aimed at making security easier for developers to understand and access. Made using C\#.NET.}
+          \resumeItem{Outlook plugin}
+          {Assisted in maintaining a phishing Outlook plugin. The plugin is designed to make it faster and easier for all ASB staff to report suspected phishing emails. It is made in C\#.}
+          \resumeItem{Incident response}
+          {Improved data processing abilities during active incident response using Python scripts. Contributed to incident response strategies with team.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {ASB Bank}{Auckland, NZ}
+      {Graduate Engineer}{Feb 2016 - Oct 2017}
+      \par{Rotated through various software development projects and business areas.}
+      \resumeItemListStart
+        \resumeItem{Asb.co.nz}
+          {The ASB Bank website is made using Adobe Experience Manager and the front-end components are made using CSS/JS/HTML, utilising gulp. It is deployed using Octopus. }
+        \resumeItem{Shared Learning Project (SLP)}
+          {Investigated and uncovered the root causes of customer appointment booking problems in branches. Developed recommendations and tested one possible solution with customers and staff. Findings were presented to the CEO. }
+          \resumeItem{Innovation Team}
+          {Worked on a range of projects aimed at broadening ASB’s customer scope past everyday banking needs. This included a chatbot, experimenting with AI tools, an Xbox Kinect game, VR games and various web apps.}
+          \resumeItem{Security Team}
+          {Undertook security training, developed an understanding of security practices within the Bank, and created tools which aimed to improve security practices throughout the Bank.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Nyriad}{Waikato, NZ}
+      {QA Engineer/Build Manager}{Sep 2015 - Jan 2016}
+      \par{Responsibilities included monitoring and and creating build processes using Jenkins, monitoring Bitbucket environment and creating/implementing standards (including Gitflow). }
+
+    \resumeSubheading
+      {Fiserv}{Auckland, NZ}
+      {Handset Tester}{Aug 2013 - Aug 2015}
+      \par{Responsibilities included manual black box testing of mobile apps and writing test cases/test suites.}
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Bela}
+      {Bela is an affiliate website that features on-trend items from Aliexpress. It is fully client-side and the code is based off of Facebook's create-react-app. It utilises Python scripts to generate listings.}
+    \resumeSubItem{Affiliate site creator}
+      {The affiliate site creator is under development and is a generic version of Bela. Anyone will be able to use it to create their own Aliexpress affiliate website in React.js. }
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{\textbf{Languages/Frameworks}{: Javascript, CSS, HTML, React.js, Typescript, Python, MySQL, C#}}
+   \item{\textbf{Tools/Technologies/Methodologies}{: Git, Sourcetree, Bash, TFS, IIS, npm, grunt, 
+Human Centred Design, OWASP, Agile, SecDevOps}}
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
